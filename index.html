@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebMIDI IO</title>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js"></script>
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Transposition Effect</h1>
+    <div>
+      <label for="dropdown-ins">Select a MIDI Input:</label>
+      <select id="dropdown-ins"></select>
+    </div>
+
+    <div>
+      <label for="dropdown-outs">Select a MIDI Output:</label>
+      <select id="dropdown-outs"></select>
+    </div>
+
+    <div>
+      <label for="transpoSlider">Transposition</label>
+      <input type="range" min="-24" max="24" id="transpoSlider" />
+      <label for="transpoSlider" id="transpoDisplay">0 semtones</label>
+    </div>
+
+    <h2>Anthony Aguilar</h2>
+  </body>
+</html>
+
+<!-- This effect on my webpage is a transposer for midi note. It will change by semitones and has a 
+  max of 2 octaves of difference from the note either up or down. There is a slider on teh website 
+that both helps with the user to interact easily with this effect as well as numbers to the right of
+the slide, displaying the number of semitones it transposed to. I hope the user enjoys!   -->
